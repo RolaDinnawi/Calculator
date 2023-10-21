@@ -69,5 +69,7 @@ clearButton = tk.Button(root, text = "C", command = clearAll, width = 11, font =
 clearButton.grid(row = 6, column = 1, columnspan = 2)
 equalButton = tk.Button(root, text = "=", command = evaluateCalc, width = 11, font = ("Ariel", 14))
 equalButton.grid(row = 6, column = 2, columnspan = 2)
+powerButton = tk.Button(root, text = "^", command = lambda: addToCalc("**"), width = 5, font = ("Ariel", 14))
+powerButton.grid(row = 6, column = 4)
 
 root.mainloop()
